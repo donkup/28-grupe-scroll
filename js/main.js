@@ -9,9 +9,13 @@ window.addEventListener('scroll', () => {
         backToTopDOM.classList.add('hide');
     }
     if (window.scrollY > 150) {
+        stickyDOM.classList.remove('notSticky');
         stickyDOM.classList.add('sticky');
+
+
     } else {
         stickyDOM.classList.remove('sticky');
+        stickyDOM.classList.add('notSticky');
     }
 })
 
